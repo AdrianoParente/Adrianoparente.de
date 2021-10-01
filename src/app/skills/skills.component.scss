@@ -1,0 +1,32 @@
+.skills-head-container{
+    background-color: var(--background-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.skills-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.skill{
+    border-radius: 10px;
+    background-color: white;
+    width: 170px;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
