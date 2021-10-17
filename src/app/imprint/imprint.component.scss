@@ -1,0 +1,19 @@
+.imprint-container {
+    margin-left: 95px;
+    margin-right: 105px;
+    padding-top: 110px;
+}
+
+p,
+h2,
+h3 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 400px) {
+    .imprint-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #1A1A1A;
+        }
+
+        .notice-container {
+            background-color: #1A1A1A;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            box-shadow: inset 5px 5px 10px black, inset -5px -5px 10px #353535;
+        }
+
+        .back-button {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        p {
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 5px 5px 5px black, -5px -5px 5px #353535;
+            border-radius: 15px;
+            color: #FA2759;
+            font-size: 25px;
+            width: 100px;
+            height: 100px;
+        }
+
+        p:hover {
+            color: #2DFCD8;
+            transform: scale(0.9);
+            box-shadow: inset 5px 5px 10px black, inset -5px -5px 10px #353535;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @media(max-width:700px) {
+            h1 {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notice-container">
+        <h1>Thank you! Your email has been sent!</h1>
+    </div>
+
+    <div class="back-button">
+        <a href="http://www.adriano-parente.de">
+            <p>go back</p>
+        </a>
+    </div>
+
+</body>
+
+</html>

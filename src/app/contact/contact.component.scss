@@ -1,0 +1,120 @@
+.contact-main-container {
+  width: 100wh;
+  background-color: var(--background-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  h1 {
+    margin-top: 40px;
+    color: var(--secondary);
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  input {
+    width: 98%;
+    background-color: var(--background-grey);
+    color: rgb(182, 181, 181);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  textarea {
+    width: 98%;
+    background-color: var(--background-grey);
+    color: rgb(182, 181, 181);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    height: 150px;
+  }
+}
+
+.send-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 40px;
+}
+
+.send-button {
+  transform: translate(-50%, -50%);
+  a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    top: 32px;
+    left: 50%;
+    line-height: 60px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+  }
+  a span {
+    position: relative;
+    z-index: 2;
+  }
+  a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--secondary);
+    transition: all 0.35s;
+  }
+  a:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+}
+
+.borderRed{
+  border: 1px solid var(--primary) !important;  
+}
+
+@media (max-width: 1100px) {
+  .contact-main-container {
+    height: unset;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-main-container {
+   padding-left: 15px;
+   padding-right: 15px;
+  }  
+}
