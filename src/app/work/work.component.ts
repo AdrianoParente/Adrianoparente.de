@@ -22,9 +22,9 @@ export class WorkComponent implements OnInit {
 
   showProjects(string: string) {
     let elPolloLoco  = <HTMLElement>document.getElementById('el-pollo-loco');
-    let project2 =  <HTMLElement>document.getElementById('project2');
-    let project3 =  <HTMLElement>document.getElementById('project3');
-    let project4 =  <HTMLElement>document.getElementById('project4');
+    let ringOfFire =  <HTMLElement>document.getElementById('ring-of-fire');
+    let callAIcecream =  <HTMLElement>document.getElementById('call-a-icecream');
+    let simpleCrm =  <HTMLElement>document.getElementById('simple_crm');
     let all = <HTMLElement>document.getElementById('all');
     let angular = <HTMLElement>document.getElementById('angular');
     let javascript = <HTMLElement>document.getElementById('javascript');
@@ -34,27 +34,27 @@ export class WorkComponent implements OnInit {
       angular.classList.remove('activated');
       javascript.classList.remove('activated');
       elPolloLoco.style.display = 'flex';
-      project2.style.display = 'flex';
-      project3.style.display = 'flex';
-      project4.style.display = 'flex';
+      ringOfFire.style.display = 'flex';
+      callAIcecream.style.display = 'flex';
+      simpleCrm.style.display = 'flex';
 
     } else if (string == 'Angular') {
       all.classList.remove('activated');
       angular.classList.add('activated');
       javascript.classList.remove('activated');
       elPolloLoco.style.display = 'none';
-      project2.style.display = 'none';
-      project3.style.display = 'flex';
-      project4.style.display = 'flex';
+      ringOfFire.style.display = 'flex';
+      callAIcecream.style.display = 'none';
+      simpleCrm.style.display = 'flex';
 
     } else if (string == 'JavaScript') { 
       all.classList.remove('activated');
       angular.classList.remove('activated');
       javascript.classList.add('activated');
       elPolloLoco.style.display = 'flex';
-      project2.style.display = 'flex';
-      project3.style.display = 'none';
-      project4.style.display = 'none';
+      ringOfFire.style.display = 'none';
+      callAIcecream.style.display = 'flex';
+      simpleCrm.style.display = 'none';
     }
 
   }

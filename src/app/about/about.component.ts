@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
    */
   showText(int: number) {
     let text = this.findField(int);
-    text.classList.remove('opac');
+    text.classList.remove('d-none');
     this.findRestField(int, '#353535')
   }
 
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
    */
   hideText(int: number) {
     let text = this.findField(int);
-    text.classList.add('opac');
+    text.classList.add('d-none');
     this.findRestField(int, 'white')
   }
 

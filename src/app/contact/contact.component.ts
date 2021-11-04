@@ -22,13 +22,13 @@ export class ContactComponent implements OnInit {
     let inputEmail = <HTMLInputElement>document.getElementById('inputEmail');
     let inputMessage = <HTMLInputElement>document.getElementById('inputMessage');
     if (inputName.value == '') {
-      inputName.classList.add('borderRed');
-      if (inputEmail.value == '') {
-        inputEmail.classList.add('borderRed');
-        if (inputMessage.value == '') {
-          inputMessage.classList.add('borderRed');
-        }
-      }
+      inputName.classList.add('borderRed')
+    }
+    else if (inputEmail.value == '') {
+      inputEmail.classList.add('borderRed')
+    }
+    else if (inputMessage.value == '') {
+      inputMessage.classList.add('borderRed');
     }
     else
       document.forms[0].submit();

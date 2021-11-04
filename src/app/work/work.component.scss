@@ -92,7 +92,24 @@
     width: 400px;
     height: 325px;
     object-fit: cover;
+  }
+}
+
+#el-pollo-loco {
+  img {
     object-position: -150px 0;
+  }
+}
+
+#call-a-icecream {
+  img {
+    object-position: 0 0;
+  }
+}
+
+#simple_crm {
+  img {
+    object-position: 0 0;
   }
 }
 
@@ -169,7 +186,7 @@
       object-position: -100px 0;
     }
   }
-  
+
   .card {
     width: 250px;
     height: 200px;
