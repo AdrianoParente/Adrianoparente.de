@@ -9,7 +9,7 @@
     p {
         color: black;
         margin-right: 50px;
-    }  
+    }
 }
 
 .button-container {
@@ -87,13 +87,12 @@
     }
 }
 
-@media(max-width:700px){
-
+@media (max-width: 700px) {
     .footer-main-container {
         height: unset;
     }
 
-    .button-container{
+    .button-container {
         flex-direction: column-reverse;
         height: unset;
         justify-content: center;

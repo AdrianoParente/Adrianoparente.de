@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  @Input() darkMode= true;
+  @Input() darkMode = true;
   constructor() { }
 
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
   /**
    * remove a class to hide responsive menu
    */
-  hideMenu(){
+  hideMenu() {
     let responsiveMenu = <HTMLElement>document.getElementById('responsiveMenu');
     responsiveMenu.style.display = 'none';
   }
