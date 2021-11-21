@@ -1,20 +1,23 @@
-<header [class.headerDark] = "darkMode">
-    <div>
-        <a class="logo-link" href="#home"><img *ngIf="!darkMode"src="assets/img/LogoAP.png"></a> 
-        <a class="logo-link" href="#home"><img *ngIf="darkMode" src="assets/img/LogoAPBlack.png"></a>
-    </div>
-    <div id="nav-bar" class="nav-bar" [class.darkLinks] = "darkMode">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#portfolio">PORTFOLIO</a>
-    </div>
-    <div id="menuBar">
-        <a><img *ngIf="!darkMode"src="assets/img/menu-4-24(1).png" (click)="showMenu()"></a> 
-        <a><img *ngIf="darkMode" src="assets/img/menu-4-24.png" (click)="showMenu()"></a>
-    </div>
-    <div id="responsiveMenu" class="overlay-menu d-none" [class.darkLinks] = "darkMode" [class.headerDark] = "darkMode"(click)="hideMenu()">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#portfolio">PORTFOLIO</a>
-    </div>
-</header>
+<div class="header-container">
+    <header [class.headerDark]="darkMode">
+        <div>
+            <a class="logo-link" href="#home"><img *ngIf="!darkMode" src="assets/img/LogoAP.png"></a>
+            <a class="logo-link" href="#home"><img *ngIf="darkMode" src="assets/img/LogoAPBlack.png"></a>
+        </div>
+        <div id="nav-bar" class="nav-bar" [class.darkLinks]="darkMode">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+        </div>
+        <div id="menuBar">
+            <a><img *ngIf="!darkMode" src="assets/img/menu-4-24(1).png" (click)="showMenu()"></a>
+            <a><img *ngIf="darkMode" src="assets/img/menu-4-24.png" (click)="showMenu()"></a>
+        </div>
+        <div id="responsiveMenu" class="overlay-menu d-none" [class.darkLinks]="darkMode" [class.headerDark]="darkMode"
+            (click)="hideMenu()">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+        </div>
+    </header>
+</div>

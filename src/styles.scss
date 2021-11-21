@@ -32,9 +32,32 @@ h2{
     color: white;
     margin: 0;
 }
+h3{
+    font-size: 24px;
+    color: var(--primary);
+    margin: 0;
+}
 
 p{
     font-size: 18px;
     color: white;
     margin: 0;
+}
+
+@keyframes showAnimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes ZoomIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

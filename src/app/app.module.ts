@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MainComponent } from './main/main.component';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

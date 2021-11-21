@@ -45,6 +45,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: transform 0.35s ease-out;
 }
 
 .logo-main-container {
@@ -70,6 +71,33 @@
     img {
         width: 30px;
         height: 30px;
+    }
+}
+
+.skill.sn-viewport--in {
+    animation: showAnimation 225ms ease-in;
+}
+
+.skill.sn-viewport--out {
+    opacity: 0;
+}
+
+h2.sn-viewport--in {
+    animation: fadeInAnimationLeft 500ms ease-in;
+}
+
+h2.sn-viewport--out {
+    opacity: 0;
+}
+
+@keyframes fadeInAnimationLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

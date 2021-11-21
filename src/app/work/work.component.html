@@ -1,80 +1,26 @@
 <div class="work-main-container" id="portfolio">
-    <h2>My work</h2>
+    <h2 snInViewport>My work</h2>
     <div class="category-button-container">
-        <div id="all" class="category-button activated" (click)="showProjects('All')">
-            <a><span>All</span></a>
-        </div>
-        <div id="angular" class="category-button" (click)="showProjects('Angular')">
-            <a><span>Angular</span></a>
-        </div>
-        <div id="javascript" class="category-button" (click)="showProjects('JavaScript')">
-            <a><span>Java Script</span></a>
-        </div>
+        <div *ngFor="let button of buttons" id="{{ button.id }}" class="category-button {{ button.activated }}" (click)="showProjects(button.click)" snInViewport>
+            <a><span>{{ button.name }}</span></a>
+        </div>        
     </div>
     <div id="all-works" class="all-works">
-        <div id="el-pollo-loco" class="container">
-            <div class="card">
-                <div class="front single-work">
-                    <img src="assets/img/Opción 1.png">
-                </div>
-                <div class="back">
+        <div *ngFor="let work of works" id="{{ work.id }}" class="container" snInViewport>
+            <div class="card" (mouseover)="showOverlay(work.id)" (mouseout)="hideOverlay(work.id)">
+                <img src="{{ work.image }}">
+                <div id="{{ work.id2 }}" class="card-overlay d-none">
+                    <h3>
+                        {{ work.name }}
+                    </h3>
                     <p>
-                        A javascript based jump and run game like Super Mario.
-                        Let the little mexican guy Pepe collect coins and bottles,
-                        but take care of the chickens and throw the bottles to fight against the final boss "El pollo
-                        loco".
+                        {{ work.description }}
                     </p>
                     <div class="category-button">
-                        <a href="http://adriano-parente.de/el-pollo-loco/" target="_blank"><span>Try out!</span></a>
+                        <a href="{{ work.link }}" target="_blank"><span>Try out!</span></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="ring-of-fire" class="container">
-            <div class="card">
-                <div class="front single-work">
-                    <img src="assets/img/RingOfFire.jpg">
-                </div>
-                <div class="back">
-                    <p>A famous card game where the players must drink.
-                        Build with Angular framework and a firebase database.
-                        A multiplayer mode is implemented.
-                    </p>
-                    <div class="category-button">
-                        <a href="http://adriano-parente.de/ring-of-fire" target="_blank"><span>Try out!</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="call-a-icecream" class="container">
-            <div class="card">
-                <div class="front single-work">
-                    <img src="assets/img/Lieferando.png">
-                </div>
-                <div class="back">
-                    <p>
-                        A Lieferando clone, built with javascript. Shows how a shop-basket works.
-                    </p>
-                    <div class="category-button">
-                        <a href="http://adriano-parente.de/call-a-icecream/" target="_blank"><span>Try out!</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="simple_crm" class="container">
-            <div class="card">
-                <div class="front single-work">
-                    <img src="assets/img/crm_picture.png">
-                </div>
-                <div class="back">
-                    <p>
-                        A simple CRM system, built with Angular and a firebase database.
-                    </p>
-                    <div class="category-button">
-                        <a href="http://adriano-parente.de/simple_crm/" target="_blank"><span>Try out!</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>       
     </div>
 </div>

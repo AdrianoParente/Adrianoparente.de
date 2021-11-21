@@ -5,8 +5,8 @@
 }
 
 .frame-container {
-    margin-left: 95px;
-    margin-right: 105px;
+    margin-left: 150px;
+    margin-right: 150px;
     padding-top: 150px;
 }
 
@@ -198,5 +198,18 @@
     }
     .frame-container {
         padding-top: 110px;
+    }
+}
+
+@media (min-width:1400px){
+    .intro-container {
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .frame-container{
+        width: 1066px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
