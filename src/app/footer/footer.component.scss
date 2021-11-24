@@ -46,7 +46,7 @@
         &:hover {
             box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
             transform: scale(0.9);
-            color: var(--secondary);
+            color: black;
         }
     }
     p {
@@ -63,7 +63,7 @@
         &:hover {
             box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
             transform: scale(0.9);
-            color: var(--secondary);
+            color: black;
         }
     }
 }
@@ -74,12 +74,14 @@
         box-shadow: 3px 3px 5px black, -3px -3px 7px #353535;
         &:hover {
             box-shadow: inset 3px 3px 5px black, inset -3px -3px 7px #353535;
+            color: var(--secondary);
         }
     }
     i {
         box-shadow: 3px 3px 5px black, -3px -3px 7px #353535;
         &:hover {
             box-shadow: inset 3px 3px 5px black, inset -3px -3px 7px #353535;
+            color: var(--secondary);
         }
     }
     .button-container {

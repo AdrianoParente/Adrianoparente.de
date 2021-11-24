@@ -128,3 +128,11 @@ h2.sn-viewport--out {
         justify-content: center;
     }
 }
+@media (min-width: 1400px) {
+    .skills-main-container {
+        justify-content: space-between;
+    }
+    .skills-container {
+        width: 1066px;
+    }
+}

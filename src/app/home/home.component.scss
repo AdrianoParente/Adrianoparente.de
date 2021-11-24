@@ -1,13 +1,16 @@
 .intro-container {
-    width: 100wh;
     height: 100vh;
     background-color: var(--background-black);
 }
 
 .frame-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 150px;
     margin-right: 150px;
     padding-top: 150px;
+    height: calc(100% - 150px);
 }
 
 .headline-container {

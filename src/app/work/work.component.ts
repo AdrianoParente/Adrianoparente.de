@@ -161,6 +161,11 @@ export class WorkComponent implements OnInit {
     simpleCrm.style.display = 'none';
   }
 
+  /**
+   * 
+   * shows the overlay 
+   * @param i name of the clicked project as a string
+   */
   showOverlay(i: string) {
     let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
     let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
@@ -176,6 +181,12 @@ export class WorkComponent implements OnInit {
       callAIcecreamOverlay.classList.remove('d-none')
     }
   }
+
+  /**
+   * 
+   * hides the overlay 
+   * @param i name of the clicked project as a string
+   */
   hideOverlay(i: string) {
     let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
     let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
