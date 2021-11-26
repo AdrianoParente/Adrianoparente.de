@@ -8,6 +8,7 @@
   color: white;
   padding-left: 150px;
   padding-right: 150px;
+
   h2 {
     margin-top: 40px;
     margin-bottom: 100px;
@@ -26,6 +27,7 @@
   margin-left: 5px;
   margin-right: 5px;
   transform: translate(-50%, -50%);
+
   a {
     display: block;
     width: 150px;
@@ -42,10 +44,12 @@
     position: relative;
     transition: all 0.35s;
   }
+
   a span {
     position: relative;
     z-index: 2;
   }
+
   a:after {
     position: absolute;
     content: "";
@@ -56,10 +60,12 @@
     background: var(--primary);
     transition: all 0.35s;
   }
+
   a:hover {
     color: #fff;
     cursor: pointer;
   }
+
   a:hover:after {
     width: 100%;
   }
@@ -70,15 +76,6 @@
     background: var(--primary);
     color: #fff;
   }
-}
-
-.all-works {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .container {
@@ -110,9 +107,11 @@
   width: 400px;
   height: 325px;
   position: relative;
+
   &:hover {
     border: 2px solid var(--secondary);
   }
+
   img {
     width: 400px;
     height: 325px;
@@ -134,13 +133,15 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
+
   h3 {
     margin-top: 30px;
   }
+
   p {
     margin-left: 15px;
     margin-right: 15px;
-  }  
+  }
 }
 
 .d-none {
@@ -172,14 +173,32 @@ h2.sn-viewport--out {
   opacity: 0;
 }
 
+.all-works {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @keyframes fadeInAnimationLeft {
   from {
-      opacity: 0;
-      transform: translateX(-100px);
+    opacity: 0;
+    transform: translateX(-100px);
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -200,27 +219,31 @@ h2.sn-viewport--out {
   .card {
     width: 250px;
     height: 200px;
+
     img {
       width: 250px;
       height: 200px;
     }
   }
 
-  .card-overlay{
+  .card-overlay {
     width: 250px;
     height: 200px;
+
     h3 {
       margin-top: 10px;
       font-size: 16px;
     }
+
     p {
       font-size: 12px;
       margin-left: 5px;
       margin-right: 5px;
     }
-    .category-button{
-      a{
-        height:30px;
+
+    .category-button {
+      a {
+        height: 30px;
         line-height: 30px;
       }
     }

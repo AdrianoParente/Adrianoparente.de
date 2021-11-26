@@ -1,26 +1,19 @@
 <div class="work-main-container" id="portfolio">
     <h2 snInViewport>My work</h2>
     <div class="category-button-container">
-        <div *ngFor="let button of buttons" id="{{ button.id }}" class="category-button {{ button.activated }}" (click)="showProjects(button.click)" snInViewport>
-            <a><span>{{ button.name }}</span></a>
+        <div  id="all" [class.activated]="all" class="category-button" (click)="showAll()"  snInViewport>
+            <a><span> All</span></a>
+        </div>   
+        <div  id="angular" [class.activated]="angular" class="category-button" (click)="showAngular()"  snInViewport>
+            <a><span>Angular</span></a>
+        </div>   
+        <div  id="javascript" [class.activated]="javascript" class="category-button" (click)="showJavascript()" snInViewport>
+            <a><span>Javascript</span></a>
         </div>        
     </div>
     <div id="all-works" class="all-works">
-        <div *ngFor="let work of works" id="{{ work.id }}" class="container" snInViewport>
-            <div class="card" (mouseover)="showOverlay(work.id)" (mouseout)="hideOverlay(work.id)">
-                <img src="{{ work.image }}">
-                <div id="{{ work.id2 }}" class="card-overlay d-none">
-                    <h3>
-                        {{ work.name }}
-                    </h3>
-                    <p>
-                        {{ work.description }}
-                    </p>
-                    <div class="category-button">
-                        <a href="{{ work.link }}" target="_blank"><span>Try out!</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>       
+       <app-angular-projects *ngIf="angular" class="wrap"></app-angular-projects>
+       <app-javascript-projects *ngIf="javascript" class="wrap"></app-javascript-projects>
+       <app-all-projects *ngIf="all" class="wrap"></app-all-projects>
     </div>
 </div>

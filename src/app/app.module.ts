@@ -14,6 +14,9 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MainComponent } from './main/main.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { AngularProjectsComponent } from './angular-projects/angular-projects.component';
+import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
+import { AllProjectsComponent } from './all-projects/all-projects.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { InViewportModule } from '@thisissoon/angular-inviewport';
     FooterComponent,
     ImprintComponent,
     DataProtectionComponent,
-    MainComponent
+    MainComponent,
+    AngularProjectsComponent,
+    JavascriptProjectsComponent,
+    AllProjectsComponent
   ],
   imports: [
     BrowserModule,
