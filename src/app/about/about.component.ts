@@ -31,9 +31,8 @@ export class AboutComponent implements OnInit {
     },
     {
       'icon': 'fas fa-search',
-      'headline': 'MY PROFESSIONAL FUTURE',
-      'description': 'After my studies and further training in front-end development, ' +
-        'I am now looking for new challenges.'
+      'headline': 'MY PROFESSIONAL PRESENT',
+      'description': 'Now I work as a junior software developer.'
     }
   ]
   constructor() { }

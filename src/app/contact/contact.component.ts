@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
    * proves if all fields are filled up, if yes it submits the form
    */
   submitForm() {
-    let inputName = <HTMLInputElement>document.getElementById('inputName');
+   /* let inputName = <HTMLInputElement>document.getElementById('inputName');
     let inputEmail = <HTMLInputElement>document.getElementById('inputEmail');
     let inputMessage = <HTMLInputElement>document.getElementById('inputMessage');
     if (inputName.value == '') {
@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
     else if (inputMessage.value == '') {
       inputMessage.classList.add('borderRed');
     }
-    else
+    else*/
       document.forms[0].submit();
   }
 }

@@ -17,6 +17,7 @@ import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { AngularProjectsComponent } from './angular-projects/angular-projects.component';
 import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { AllProjectsComponent } from './all-projects/all-projects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InViewportModule
+    InViewportModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

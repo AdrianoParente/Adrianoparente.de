@@ -3,20 +3,39 @@
       <h1>Contact me.</h1>
       <p>Get in touch via the form below, or by emailing <a href="mailto:adriano.parente@gmx.de">
             <span class="secondary">adriano.parente@gmx.de</span></a></p>
-      <form id="myForm" action="http://adriano-parente.de/send_mail.php" method="POST">
+      <form #contactForm="ngForm" id="myForm" action="http://adriano-parente.de/send_mail.php" method="POST">
          <label>
             <p>Name</p>
          </label>
-         <input id="inputName" type="text" name="name" placeholder="Enter your name">
+         <input
+          id="inputName" 
+          type="text" 
+          name="name" 
+          placeholder="Enter your name" 
+          ngModel
+          required>
          <label>
             <p>Email address</p>
          </label>
-         <input id="inputEmail" type="text" name="email" placeholder="Enter your email address">
+         <input 
+         id="inputEmail" 
+         type="email" 
+         name="email" 
+         placeholder="Enter your email address"
+         ngModel
+         required
+         email>
          <label>
             <p>Message</p>
          </label>
-         <textarea id="inputMessage" type="text" name="message" placeholder="Enter your message"></textarea>
-         <div class="send-button-container">
+         <textarea
+          id="inputMessage" 
+          type="text" 
+          name="message" 
+          placeholder="Enter your message"
+          ngModel
+          required></textarea>
+         <div [ngStyle] = "{'display': !contactForm.valid ? 'none' : 'flex'}" class="send-button-container">
             <div class="send-button" (click)="submitForm()">
                <a><span>Send</span></a>
             </div>
