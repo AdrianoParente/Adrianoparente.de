@@ -4,21 +4,22 @@
     <div class="headline-container">
       <div class="headline-button-container">
         <span class="tags">&lt;h1&gt;</span>
-        <h1>
+        <h1 class="headline">
           <span *ngFor="let letter of salutationArray; let i = index" class="text-animate _X{{ i }}"
             appChangeClasses>{{letter}}</span><br>
           <span *ngFor="let letter of introductionArray; let i = index" class="text-animate _X{{ i + 3 }}"
             appChangeClasses>{{letter}}</span><span>&nbsp;</span>
           <span class="primary">
             <span *ngFor="let letter of nameArray; let i = index" class="text-animate _X{{ i + 6 }}"
-              appChangeClasses>{{letter}}</span>
-          </span><br>
-          <span *ngFor="let letter of jobArray1; let i = index" class="text-animate _X{{ i + 13 }}"
+              appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+          </span>
+          <span *ngFor="let letter of nameArray1; let i = index" class="text-animate _X{{ i + 12 }}"
+          appChangeClasses>{{letter}}</span><br>
+          <span *ngFor="let letter of jobArray1; let i = index" class="text-animate _X{{ i + 19 }}"
             appChangeClasses>{{letter}}</span><span>&nbsp;</span>
-          <span *ngFor="let letter of jobArray2; let i = index" class="text-animate _X{{ i + 18 }}"
+          <span *ngFor="let letter of jobArray2; let i = index" class="text-animate _X{{ i + 28 }}"
             appChangeClasses>{{letter}}</span><span>&nbsp;</span>
-          <span *ngFor="let letter of jobArray3; let i = index" class="text-animate _X{{ i + 21 }}"
-            appChangeClasses>{{letter}}</span>
+        
         </h1>
         <span class="tags">&lt;/h1&gt;</span>
         <div class="fadeInDown contact-button-container">

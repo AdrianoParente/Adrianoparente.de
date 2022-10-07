@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .about-introduce {
@@ -17,6 +18,7 @@
   border-bottom-color: var(--secondary);
   border-left-color: var(--background-grey);
   border-right-color: var(--background-grey);
+  margin-bottom: 50px;
 }
 
 .aboutText {
@@ -25,12 +27,18 @@
   align-items: flex-start;
   justify-content: center;
   margin: 50px 0;
+  h2{
+    margin-left: 10px;
+  }
 }
 
 .welcome-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  p{
+    margin-left: 10px;
+  }
 }
 
 .aboutImage {
@@ -44,15 +52,17 @@
 
 #subscribe {
   font-family: "WindSong", cursive;
+  margin-left: 10px;
 }
 
 .life-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 75px;
+  flex-wrap: wrap; 
   width: 100%;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .life-category-container {
@@ -89,7 +99,6 @@
 }
 
 .description-text {
-  margin-bottom: 75px;
   width: 200px;
   text-align: center;
   padding: 10px;

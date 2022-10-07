@@ -11,23 +11,29 @@
             <span class="tags">&lt;/h2&gt;</span>
         </div>
         <div class="button-work">
-            <div class="category-button-container">
-                <div id="all" [class.activated]="all" class="category-button" (click)="showAll()" snInViewport>
-                    <a><span> All</span></a>
-                </div>
-                <div id="angular" [class.activated]="angular" class="category-button" (click)="showAngular()"
-                    snInViewport>
-                    <a><span>Angular</span></a>
-                </div>
-                <div id="javascript" [class.activated]="javascript" class="category-button" (click)="showJavascript()"
-                    snInViewport>
-                    <a><span>Javascript</span></a>
+            <span class="tags">&lt;button&gt;</span>
+            <div class="buttons">
+                <div class="category-button-container">
+                    <div id="all" [class.activated]="all" class="category-button" (click)="showAll()" snInViewport>
+                        <a><span> All</span></a>
+                    </div>
+                    <div id="angular" [class.activated]="angular" class="category-button" (click)="showAngular()"
+                        snInViewport>
+                        <a><span>Angular</span></a>
+                    </div>
+                    <div id="javascript" [class.activated]="javascript" class="category-button"
+                        (click)="showJavascript()" snInViewport>
+                        <a><span>Javascript</span></a>
+                    </div>
                 </div>
             </div>
+            <span class="tags">&lt;/button&gt;</span>
+            <span class="tags">&lt;section&gt;</span>
             <div id="all-works" class="all-works">
                 <app-angular-projects *ngIf="angular" class="wrap"></app-angular-projects>
                 <app-javascript-projects *ngIf="javascript" class="wrap"></app-javascript-projects>
                 <app-all-projects *ngIf="all" class="wrap"></app-all-projects>
             </div>
+            <span class="tags">&lt;/section&gt;</span>
         </div>
     </div>

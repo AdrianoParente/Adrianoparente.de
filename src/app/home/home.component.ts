@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   salutationArray: string[] = ['H', 'i', ','];
   introductionArray: string[] = ['I', "'", 'm'];
   nameArray: string[] = ['A', 'd', 'r', 'i', 'a', 'n', 'o'];
-  jobArray1: string[] = ['F', 'r', 'o', 'n', 't'];
-  jobArray2: string[] = ['E', 'n', 'd'];
-  jobArray3: string[] = ['D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+  nameArray1: string[] = ['P', 'a', 'r', 'e', 'n', 't', 'e'];
+  jobArray1: string[] = ['S', 'o', 'f', 't', 'w', 'a', 'r','e']; 
+  jobArray2: string[] = ['D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
   
   constructor() { }
 

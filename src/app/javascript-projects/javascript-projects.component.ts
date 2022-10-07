@@ -30,7 +30,7 @@ export class JavascriptProjectsComponent implements OnInit {
 
     {
       'id': 'recipe',
-      'image': 'assets/img/smartmockups_ringoffire.jpg',
+      'image': 'assets/img/construction.png',
       'id2': 'recipe-overlay',
       'name': 'Recipe',
       'description': 'A Kochwelt clone' ,

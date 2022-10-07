@@ -21,19 +21,20 @@ export class AboutComponent implements OnInit {
       'icon': 'fas fa-graduation-cap',
       'headline': 'STUDIES',
       'description': 'In 2021 I graduated with a Bachelor of Science in business informatics. ' +
-        'Then I visited an institution in Munich to develop myself further in front end development.'
+        'Then I visited an institution in Munich to develop myself further in front end development.' +
+        'After that I continued studying business informatics for a Master degree, which I will achieve in 2023.'
     },
     {
       'icon': 'far fa-heart',
       'headline': 'MY STRENGTHS',
-      'description': 'I work independently as well as in a team, ' +
-        'creative and have a logical way of thinking. ' +
-        'I am characterized by a high threshold of frustration and mental resilience.'
+      'description': 'I work independently as well as in a team. ' +
+        'I have a logical way of thinking. ' +
+        'I am characterized by a high threshold of frustration, mental resilience and creativity.'
     },
     {
       'icon': 'fas fa-search',
       'headline': 'MY PROFESSIONAL PRESENT',
-      'description': 'Now I work as a junior software developer.'
+      'description': 'Since 2022 I work as a junior software developer.'
     }
   ]
   constructor() { }
