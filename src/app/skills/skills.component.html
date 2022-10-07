@@ -1,15 +1,40 @@
-<div class="skills-main-container" id="my-skills">
-    <h2 snInViewport>My Skills</h2>
-    <div class="skills-container">
-       
-            <div *ngFor = "let skill of skills; let i = index" class="skill" snInViewport>
-                <p>{{ skill.name }}</p>
-                <div class="logo-main-container">
-                    <div class="logo-inner">
-                        <img src = "{{ skill.image }}">
-                    </div>
+<div class="intro-container">
+    <div class="skills-main-container" id="my-skills">
+        <div class="skills-container">
+            <span class="tags">&lt;h2&gt;</span>
+            <h2 *inView> <span *ngFor="let letter of skillNameArray1; let i = index" class="text-animate _X{{ i }}"
+                    appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+
+                <span *ngFor="let letter of skillNameArray2; let i = index" class="text-animate _X{{ i + 2 }}"
+                    appChangeClasses>{{letter}}</span>
+            </h2>
+            <span class="tags">&lt;/h2&gt;</span>
+            <div>
+                <span class="tags">&lt;p&gt;</span>
+                <div>
+                    <p>
+
+                        During my studies I gained a lot of skills. These are some of them.
+                        Technologies which I used in my projects below and also in other projects which I share on my
+                        github
+                        profile.
+                        <br><br>
+                        Everyday I learn more about these technologies working for an IT-company. And I get more and
+                        more
+                        fascinated by diving always deeper in the topic.
+
+                    </p>
                 </div>
-            </div>            
-       
+
+                <span class="tags">&lt;p&gt;</span>
+            </div>
+        </div>
+        <div class="tag-container">
+            <span class="tags tags-right">&lt;div&gt;</span>
+            <div  id="tag"></div>
+            <div class="d-none" id="tag1"></div>
+            <div class="d-none" id="tag2"></div>
+            <span class="tags tags-right">&lt;/div&gt;</span>
+        </div>
     </div>
 </div>

@@ -1,27 +1,3 @@
-.work-main-container {
-    width: 100wh;
-    background-color: var(--background-black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding-left: 150px;
-    padding-right: 150px;
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 100px;
-    }
-  }
-  
-  .category-button-container {
-    width: 500px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
   .category-button {
     margin-left: 5px;
     margin-right: 5px;
@@ -64,48 +40,14 @@
       width: 100%;
     }
   }
-  
-  .activated {
-    a {
-      background: var(--primary);
-      color: #fff;
-    }
-  }
-  
-  .all-works {    
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-  
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-  }
-  
-  #el-pollo-loco {
-    img {
-      object-position: -150px 0;
-    }
-  }
-  
-  #call-a-icecream {
-    img {
-      object-position: 0 0;
-    }
-  }
-  
-  #simple_crm {
-    img {
-      object-position: 0 0;
-    }
-  }
-  
+         
   .card {
     border: 2px solid var(--primary);
     width: 400px;
     height: 325px;
-    position: relative;
+    position: relative;   
+    margin: 20px 0;
+
     &:hover {
       border: 2px solid var(--secondary);
     }
@@ -178,76 +120,66 @@
         transform: translateX(0);
     }
   }
-  
-  @media (max-width: 550px) {
-    .category-button-container {
-      flex-direction: column;
-      height: unset;
-      width: 100%;
-    }
-  
-    .category-button {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }
-  
-  @media (max-width: 450px) {
-    .card {
-      width: 250px;
-      height: 200px;
-      img {
-        width: 250px;
-        height: 200px;
-      }
-    }
-  
-    .card-overlay{
-      width: 250px;
-      height: 200px;
-      h3 {
-        margin-top: 10px;
-        font-size: 16px;
-      }
-      p {
-        font-size: 12px;
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-      .category-button{
-        a{
-          height:30px;
-          line-height: 30px;
+
+   @media (max-width: 1030px) {
+      .card {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
-    }
-  
-    .work-main-container {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-  
-    #el-pollo-loco {
-      img {
-        object-position: -100px 0;
+
+      .card-overlay {
+        width: 100%;
+        height: 100%;
       }
     }
-  
-    #ring-of-fire {
-      img {
-        object-position: -10px 0;
+
+    @media (max-width: 620px) {
+      .card {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
+
+      .card-overlay {
+        width: 100%;
+        height: 100%;
+
+        h3 {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        .category-button {
+          a {
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }      
     }
-  }
+
+    @media (max-width: 550px) {
+      .category-button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }  
   
-  @media (min-width: 1400px) {
-    .work-main-container {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+ 
   
-    .all-works {
-      width: 1066px;
-    }
-  }
-  
+ 

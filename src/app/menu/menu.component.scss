@@ -85,6 +85,17 @@ header {
     display: none;
 }
 
+@media (max-width: 1100px) {
+    header{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    header{
+        padding: 0 50px;
+    }
+}
 @media (max-width: 700px) {
     #nav-bar {
         display: none;

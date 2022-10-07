@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
+  skillNameArray1:string[] = ['M','y'];
+  skillNameArray2:string[] = ['S','k','i','l','l','s'];
   skills = [
     {
       'name': 'Java script',

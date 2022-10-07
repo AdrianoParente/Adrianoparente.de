@@ -1,63 +1,42 @@
 <div class="intro-container" id="home">
-    <div class="frame-container">
-        <div class="headline-container">
-            <div class="headline-button-container fadeInLeft">
-                <h1>
-                    <span id="green">H</span>
-                    <span id="pink">i</span>
-                    <span id="green">,</span>
-                    <br>
-                    <span id="pink">I</span>
-                    <span id="green">'</span>
-                    <span id="pink">m&nbsp;</span>
-                    <span class="primary">
-                        <span id="white">A</span>
-                        <span id="white">d</span>
-                        <span id="white">r</span>
-                        <span id="white">i</span>
-                        <span id="white">a</span>
-                        <span id="white">n</span>
-                        <span id="white">o&nbsp;</span>
-                    </span>
-                    <span id="green">P</span>
-                    <span id="pink">a</span>
-                    <span id="green">r</span>
-                    <span id="pink">e</span>
-                    <span id="green">n</span>
-                    <span id="pink">t</span>
-                    <span id="green">e</span>
-                    <br>
-                    <span id="pink">F</span>
-                    <span id="green">r</span>
-                    <span id="pink">o</span>
-                    <span id="green">n</span>
-                    <span id="pink">t&nbsp;</span>
-                    <span id="green">E</span>
-                    <span id="pink">n</span>
-                    <span id="green">d&nbsp;</span>
-                    <span id="pink">D</span>
-                    <span id="green">e</span>
-                    <span id="pink">v</span>
-                    <span id="green">e</span>
-                    <span id="pink">l</span>
-                    <span id="green">o</span>
-                    <span id="pink">p</span>
-                    <span class="secondary">
-                        <span id="white">e</span>
-                    </span>
-                    <span id="pink">r</span>
-                </h1>
-                <div class="contact-button">
-                    <a href="#contact"><span>Contact me</span></a>
-                </div>
-            </div>
+  <div class="frame-container">
+    <span class="tags">&lt;body&gt;</span>
+    <div class="headline-container">
+      <div class="headline-button-container">
+        <span class="tags">&lt;h1&gt;</span>
+        <h1>
+          <span *ngFor="let letter of salutationArray; let i = index" class="text-animate _X{{ i }}"
+            appChangeClasses>{{letter}}</span><br>
+          <span *ngFor="let letter of introductionArray; let i = index" class="text-animate _X{{ i + 3 }}"
+            appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+          <span class="primary">
+            <span *ngFor="let letter of nameArray; let i = index" class="text-animate _X{{ i + 6 }}"
+              appChangeClasses>{{letter}}</span>
+          </span><br>
+          <span *ngFor="let letter of jobArray1; let i = index" class="text-animate _X{{ i + 13 }}"
+            appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+          <span *ngFor="let letter of jobArray2; let i = index" class="text-animate _X{{ i + 18 }}"
+            appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+          <span *ngFor="let letter of jobArray3; let i = index" class="text-animate _X{{ i + 21 }}"
+            appChangeClasses>{{letter}}</span>
+        </h1>
+        <span class="tags">&lt;/h1&gt;</span>
+        <div class="fadeInDown contact-button-container">
+          <span class="tags">&lt;button&gt;</span>
+          <div class="contact-button">
+            <a href="#contact"><span>Contact me</span></a>
+          </div>
+          <span class="tags">&lt;/button&gt;</span>
+        </div>
+      </div>
 
-            <div class="portrait-image-container fadeInRight">
-                <img class="portrait-image" src="assets/img/Adriano.jpg">
-            </div>
-        </div>
-        <div class="go-down-container">
-            <a href="#my-skills"><img class="arrow-down" src="assets/img/arrow-207-48.png"></a>
-        </div>
+      <div class="portrait-image-container fadeInRight">
+        <span class="tags">&lt;img&gt;</span>
+        <img class="portrait-image" src="assets/img/Adriano.jpg">
+      </div>
     </div>
+    <div class="go-down-container">
+      <a href="#my-skills"><img class="arrow-down" src="assets/img/arrow-207-48.png"></a>
+    </div>
+  </div>
 </div>

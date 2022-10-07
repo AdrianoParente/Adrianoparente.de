@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  aboutNameArray1:string[] = ['A','b','o','u','t'];
+  aboutNameArray2:string[] = ['m','e'];
   stories = [
     {
       'icon': 'fas fa-walking',
       'headline': 'MY PROFESSIONAL PAST',
       'description': 'I was self-employed in the catering industry for over 20 years. ' +
-        'Then I switched to the work as a sales representative for a wholesaler and work there since 2 years.'
+        'Then I switched to the work as a sales representative for a wholesaler and worked there for 2 years.'
     },
     {
       'icon': 'fas fa-graduation-cap',

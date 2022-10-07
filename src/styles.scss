@@ -1,3 +1,4 @@
+@import '~animate.css/animate.min';
 html{
     scroll-behavior: smooth;
 }
@@ -28,10 +29,12 @@ h1{
 }
 
 h2{
-    font-size: 36px;
-    color: white;
+    font-size: 64px;
+    color: var(--secondary);
     margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
+
 h3{
     font-size: 24px;
     color: var(--primary);
@@ -44,6 +47,13 @@ p{
     margin: 0;
 }
 
+.tags {
+    color: yellow;
+    opacity: 0.3;
+    font-family: 'La Belle Aurore';
+    font-size: 18px;
+  }
+  
 @keyframes showAnimation {
     from {
         transform: scale(0);

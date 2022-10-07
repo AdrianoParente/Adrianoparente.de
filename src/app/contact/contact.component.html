@@ -1,45 +1,38 @@
 <div class="contact-main-container" id="contact">
    <div class="contact-container">
-      <h1>Contact me.</h1>
+      <span class="tags">&lt;h2&gt;</span>
+      <h2 *inView> <span *ngFor="let letter of contactNameArray1; let i = index" class="text-animate _X{{ i }}"
+            appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+
+         <span *ngFor="let letter of contactNameArray2; let i = index" class="text-animate _X{{ i + 7 }}"
+            appChangeClasses>{{letter}}</span>
+      </h2>
+      <span class="tags">&lt;/h2&gt;</span>
+      <span class="tags">&lt;p&gt;</span>
       <p>Get in touch via the form below, or by emailing <a href="mailto:adriano.parente@gmx.de">
             <span class="secondary">adriano.parente@gmx.de</span></a></p>
+      <span class="tags">&lt;/p&gt;</span>
+      <span class="tags">&lt;form&gt;</span>
       <form #contactForm="ngForm" id="myForm" action="http://adriano-parente.de/send_mail.php" method="POST">
          <label>
             <p>Name</p>
          </label>
-         <input
-          id="inputName" 
-          type="text" 
-          name="name" 
-          placeholder="Enter your name" 
-          ngModel
-          required>
+         <input id="inputName" type="text" name="name" placeholder="Enter your name" ngModel required>
          <label>
             <p>Email address</p>
          </label>
-         <input 
-         id="inputEmail" 
-         type="email" 
-         name="email" 
-         placeholder="Enter your email address"
-         ngModel
-         required
-         email>
+         <input id="inputEmail" type="email" name="email" placeholder="Enter your email address" ngModel required email>
          <label>
             <p>Message</p>
          </label>
-         <textarea
-          id="inputMessage" 
-          type="text" 
-          name="message" 
-          placeholder="Enter your message"
-          ngModel
-          required></textarea>
-         <div [ngStyle] = "{'display': !contactForm.valid ? 'none' : 'flex'}" class="send-button-container">
+         <textarea id="inputMessage" type="text" name="message" placeholder="Enter your message" ngModel
+            required></textarea>
+         <div [ngStyle]="{'display': !contactForm.valid ? 'none' : 'flex'}" class="send-button-container">
             <div class="send-button" (click)="submitForm()">
                <a><span>Send</span></a>
             </div>
          </div>
+         <span class="tags">&lt;/form&gt;</span>
       </form>
    </div>
 </div>

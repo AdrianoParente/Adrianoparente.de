@@ -11,7 +11,7 @@ export class AngularProjectsComponent implements OnInit {
 
     {
       'id': 'ring-of-fire',
-      'image': 'assets/img/RingOfFire.jpg',
+      'image': 'assets/img/smartmockups_ringoffire.jpg',
       'id2': 'ring-of-fire-overlay',
       'name': 'Ring of Fire',
       'description': 'A famous card game where the players must drink.' +
@@ -22,12 +22,22 @@ export class AngularProjectsComponent implements OnInit {
 
     {
       'id': 'simple_crm',
-      'image': 'assets/img/crm_picture.png',
+      'image': 'assets/img/smartmockups_crm.jpg',
       'id2': 'simple_crm-overlay',
       'name': 'Simple CRM',
       'description': ' A simple CRM system, built with Angular and a firebase database.',
       'link': 'http://adriano-parente.de/simple_crm/'
     },
+
+    {
+      'id': 'homepage',
+      'image': 'assets/img/smartmockups_ringoffire.jpg',
+      'id2': 'homepage-overlay',
+      'name': 'Homepage',
+      'description': 'My personal homepage' ,
+      'link': 'http://adriano-parente.de'
+    }
+
   ]
   constructor() { }
 
@@ -42,17 +52,15 @@ export class AngularProjectsComponent implements OnInit {
   showOverlay(i: string) {
     let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
     let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
-    let elPolloLocoOverlay = <HTMLElement>document.getElementById('el-pollo-loco-overlay');
-    let callAIcecreamOverlay = <HTMLElement>document.getElementById('call-a-icecream-overlay');
+    let homepageOverlay = <HTMLElement>document.getElementById('homepage-overlay');
+    
     if (i == 'simple_crm') {
       simpleCrmOverlay.classList.remove('d-none');
     } else if (i == 'ring-of-fire') {
       ringOfFireOverlay.classList.remove('d-none')
-    } else if (i == 'el-pollo-loco') {
-      elPolloLocoOverlay.classList.remove('d-none')
-    } else if (i == 'call-a-icecream') {
-      callAIcecreamOverlay.classList.remove('d-none')
-    }
+    } else if (i == 'homepage') {
+      homepageOverlay.classList.remove('d-none')
+    } 
   }
 
   /**
@@ -63,17 +71,14 @@ export class AngularProjectsComponent implements OnInit {
   hideOverlay(i: string) {
     let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
     let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
-    let elPolloLocoOverlay = <HTMLElement>document.getElementById('el-pollo-loco-overlay');
-    let callAIcecreamOverlay = <HTMLElement>document.getElementById('call-a-icecream-overlay');
+    let homepageOverlay = <HTMLElement>document.getElementById('homepage-overlay');
 
     if (i == 'simple_crm') {
       simpleCrmOverlay.classList.add('d-none')
     } else if (i == 'ring-of-fire') {
       ringOfFireOverlay.classList.add('d-none')
-    } else if (i == 'el-pollo-loco') {
-      elPolloLocoOverlay.classList.add('d-none')
-    } else if (i == 'call-a-icecream') {
-      callAIcecreamOverlay.classList.add('d-none')
-    }
+    } else if (i == 'homepage') {
+      homepageOverlay.classList.add('d-none')
+    } 
   }
 }

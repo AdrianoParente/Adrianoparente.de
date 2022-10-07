@@ -7,30 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  contactNameArray1:string[] = ['C','o','n','t','a','c','t'];
+  contactNameArray2:string[] = ['m','e','.'];
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
-  /**
-   * proves if all fields are filled up, if yes it submits the form
-   */
-  submitForm() {
-   /* let inputName = <HTMLInputElement>document.getElementById('inputName');
-    let inputEmail = <HTMLInputElement>document.getElementById('inputEmail');
-    let inputMessage = <HTMLInputElement>document.getElementById('inputMessage');
-    if (inputName.value == '') {
-      inputName.classList.add('borderRed')
-    }
-    else if (inputEmail.value == '') {
-      inputEmail.classList.add('borderRed')
-    }
-    else if (inputMessage.value == '') {
-      inputMessage.classList.add('borderRed');
-    }
-    else*/
+  
+  submitForm() {  
       document.forms[0].submit();
   }
 }

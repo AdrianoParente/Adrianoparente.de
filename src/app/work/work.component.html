@@ -1,19 +1,33 @@
-<div class="work-main-container" id="portfolio">
-    <h2 snInViewport>My work</h2>
-    <div class="category-button-container">
-        <div  id="all" [class.activated]="all" class="category-button" (click)="showAll()"  snInViewport>
-            <a><span> All</span></a>
-        </div>   
-        <div  id="angular" [class.activated]="angular" class="category-button" (click)="showAngular()"  snInViewport>
-            <a><span>Angular</span></a>
-        </div>   
-        <div  id="javascript" [class.activated]="javascript" class="category-button" (click)="showJavascript()" snInViewport>
-            <a><span>Javascript</span></a>
-        </div>        
+<div class="intro-container">
+    <div class="work-main-container" id="portfolio">
+        <div class="headline-container">
+            <span class="tags">&lt;h2&gt;</span>
+            <h2 *inView> <span *ngFor="let letter of workNameArray1; let i = index" class="text-animate _X{{ i }}"
+                    appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+
+                <span *ngFor="let letter of workNameArray2; let i = index" class="text-animate _X{{ i + 2 }}"
+                    appChangeClasses>{{letter}}</span>
+            </h2>
+            <span class="tags">&lt;/h2&gt;</span>
+        </div>
+        <div class="button-work">
+            <div class="category-button-container">
+                <div id="all" [class.activated]="all" class="category-button" (click)="showAll()" snInViewport>
+                    <a><span> All</span></a>
+                </div>
+                <div id="angular" [class.activated]="angular" class="category-button" (click)="showAngular()"
+                    snInViewport>
+                    <a><span>Angular</span></a>
+                </div>
+                <div id="javascript" [class.activated]="javascript" class="category-button" (click)="showJavascript()"
+                    snInViewport>
+                    <a><span>Javascript</span></a>
+                </div>
+            </div>
+            <div id="all-works" class="all-works">
+                <app-angular-projects *ngIf="angular" class="wrap"></app-angular-projects>
+                <app-javascript-projects *ngIf="javascript" class="wrap"></app-javascript-projects>
+                <app-all-projects *ngIf="all" class="wrap"></app-all-projects>
+            </div>
+        </div>
     </div>
-    <div id="all-works" class="all-works">
-       <app-angular-projects *ngIf="angular" class="wrap"></app-angular-projects>
-       <app-javascript-projects *ngIf="javascript" class="wrap"></app-javascript-projects>
-       <app-all-projects *ngIf="all" class="wrap"></app-all-projects>
-    </div>
-</div>

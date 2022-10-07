@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-
+  workNameArray1:string[] = ['M','y'];
+  workNameArray2:string[] = ['P','o','r','t','f','o','l','i','o'];
 
   constructor() { }
 

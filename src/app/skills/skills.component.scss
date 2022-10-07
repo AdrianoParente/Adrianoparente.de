@@ -1,98 +1,71 @@
-.skills-main-container {
+.intro-container {
+  height: 100vh;
   background-color: var(--background-grey);
+}
+
+.skills-main-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding-left: 150px;
-  padding-right: 150px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 150px;
 
   h2 {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    width: 200px;
     text-align: center;
+    margin-left: 10px;
   }
 
   p {
-    color: black;
+    color: white;
+    margin-left: 10px;
   }
+}
+
+.tags-right {
+  margin-left: 50px;
+}
+
+.d-none {
+  display: none;
 }
 
 .skills-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-
+  flex-direction: column;
+  margin-top: 50px;
 }
 
+.tag-container {
+  margin-top: 50px;
+}
 
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
 
-.skill {
-  border-radius: 10px;
-  background-color: white;
-  width: 300px;
-  height: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 80px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: transform 0.35s ease-out;
-
-  p {
-    font-size: 28px;
+@for $i from 0 through 7 {
+  ._X#{$i} {
+    animation-delay: #{$i / 7.5}s;
   }
 }
 
-.logo-main-container {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -50px;
-  left: 50%;
-}
+.text-animation-hover {
+  display: inline-block;
+  animation-fill-mode: both;
+  min-width: 10px;
 
-.logo-inner {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid white;
-  box-shadow: 0 2px 2px #888888;
-  background-color: white;
-  left: -50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 50px;
-    height: 50px;
+  &:hover {
+    color: white;
   }
 }
 
-.skill.sn-viewport--in {
-  animation: showAnimation 225ms ease-in;
-}
-
-.skill.sn-viewport--out {
-  opacity: 0;
-}
-
-h2.sn-viewport--in {
-  animation: fadeInAnimationLeft 500ms ease-in;
-}
-
-h2.sn-viewport--out {
-  opacity: 0;
+.text-animation-transition {
+  animation: rubberBand 1s;
 }
 
 @keyframes fadeInAnimationLeft {
@@ -107,57 +80,85 @@ h2.sn-viewport--out {
   }
 }
 
+@media (max-width: 1280px) {
 
+  .intro-container {
+    height: unset;
+  }
 
-@media (max-width: 1050px) {
-  .skills-container {
-    justify-content: center;
+  .skills-main-container {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .tags-right {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .skills-main-container {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-main-container {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  #tag {
+    display: none;
+  }
+
+  #tag1 {
+    display: flex;
   }
 }
 
 @media (max-width: 550px) {
-  .skill {
-    width: 170px;
-    height: 120px;
-    margin-bottom: 40px;
+  .tags {
+    font-size: 12px;
+  } 
+}
 
-    p {
-      font-size: 16px;
-    }
+@media (max-width: 500px) {
+  #tag1 {
+    display: none;
   }
 
-  .logo-main-container {
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: 50%;
+  #tag2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 48px;
   }
 
-  .logo-inner {
-    width: 60px;
-    height: 60px;
-
-    img {
-      width: 30px;
-      height: 30px;
-    }
-  }
 }
 
 @media (max-width: 400px) {
   .skills-main-container {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0 10px;
   }
 }
 
-@media (min-width: 1400px) {
-  .skills-main-container {    
-    padding-left: 0px;
-    padding-right: 0px;
+
+  @media (min-width:1400px) {
+    .intro-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .skills-main-container {
+      width: 1066px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 
-  .skills-container {
-    width: 1066px;
-  }
-}
+

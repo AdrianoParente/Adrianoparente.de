@@ -10,7 +10,7 @@ export class JavascriptProjectsComponent implements OnInit {
   works = [
     {
       'id': 'el-pollo-loco',
-      'image': 'assets/img/Opción 1.png',
+      'image': 'assets/img/smartmockups_elpolloloco.jpg',
       'id2': 'el-pollo-loco-overlay',
       'name': 'El Pollo Loco',
       'description': 'A javascript based jump and run game like Super Mario.' +
@@ -21,11 +21,20 @@ export class JavascriptProjectsComponent implements OnInit {
     },
     {
       'id': 'call-a-icecream',
-      'image': 'assets/img/Lieferando.png',
+      'image': 'assets/img/smartmockups_lieferando.jpg',
       'id2': 'call-a-icecream-overlay',
       'name': 'Call A Icecream',
       'description': ' A Lieferando clone, built with javascript. Shows how a shop-basket works.',
       'link': 'http://adriano-parente.de/call-a-icecream/'
+    },
+
+    {
+      'id': 'recipe',
+      'image': 'assets/img/smartmockups_ringoffire.jpg',
+      'id2': 'recipe-overlay',
+      'name': 'Recipe',
+      'description': 'A Kochwelt clone' ,
+      'link': 'http://adriano-parente.de'
     }
 
   ]
@@ -40,19 +49,17 @@ export class JavascriptProjectsComponent implements OnInit {
      * @param i name of the clicked project as a string
      */
   showOverlay(i: string) {
-    let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
-    let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
     let elPolloLocoOverlay = <HTMLElement>document.getElementById('el-pollo-loco-overlay');
     let callAIcecreamOverlay = <HTMLElement>document.getElementById('call-a-icecream-overlay');
-    if (i == 'simple_crm') {
-      simpleCrmOverlay.classList.remove('d-none');
-    } else if (i == 'ring-of-fire') {
-      ringOfFireOverlay.classList.remove('d-none')
-    } else if (i == 'el-pollo-loco') {
+    let recipeOverlay = <HTMLElement>document.getElementById('recipe-overlay');
+    
+    if (i == 'el-pollo-loco') {
       elPolloLocoOverlay.classList.remove('d-none')
     } else if (i == 'call-a-icecream') {
       callAIcecreamOverlay.classList.remove('d-none')
-    }
+    } else if (i == 'recipe') {
+      recipeOverlay.classList.remove('d-none')
+    } 
   }
 
   /**
@@ -61,19 +68,17 @@ export class JavascriptProjectsComponent implements OnInit {
    * @param i name of the clicked project as a string
    */
   hideOverlay(i: string) {
-    let simpleCrmOverlay = <HTMLElement>document.getElementById('simple_crm-overlay');
-    let ringOfFireOverlay = <HTMLElement>document.getElementById('ring-of-fire-overlay');
     let elPolloLocoOverlay = <HTMLElement>document.getElementById('el-pollo-loco-overlay');
     let callAIcecreamOverlay = <HTMLElement>document.getElementById('call-a-icecream-overlay');
+    let recipeOverlay = <HTMLElement>document.getElementById('recipe-overlay');
+    
 
-    if (i == 'simple_crm') {
-      simpleCrmOverlay.classList.add('d-none')
-    } else if (i == 'ring-of-fire') {
-      ringOfFireOverlay.classList.add('d-none')
-    } else if (i == 'el-pollo-loco') {
+    if (i == 'el-pollo-loco') {
       elPolloLocoOverlay.classList.add('d-none')
     } else if (i == 'call-a-icecream') {
       callAIcecreamOverlay.classList.add('d-none')
-    }
+    } else if (i == 'recipe') {
+      recipeOverlay.classList.add('d-none')
+    } 
   }
 }

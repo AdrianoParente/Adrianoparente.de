@@ -1,31 +1,49 @@
 <div class="about-main-container" id="about">
-    <div class="about-introduce" >
-        <img class="aboutImage" src="assets/img/Adriano_wall.jpg">
-        <div class="aboutText">
-            <h2 snInViewport>About me</h2>
-            <p>
-                "Welcome to my website and enjoy watching it.
-                I'm a Front-end developer based in Munich.
-                You will find a short summary of my life in the section below.
-                If you have any questions, please do not hesitate to contact me!"
-            </p>
-            <div id="subscribe">
-                <p>Adriano Parente</p>
+    <div class="about-sub-container">
+        <div class="about-introduce">
+            <div class="aboutText">
+                <span class="tags">&lt;h2&gt;</span>
+                <h2 *inView>
+                    <span *ngFor="let letter of aboutNameArray1; let i = index" class="text-animate _X{{ i }}"
+                        appChangeClasses>{{letter}}</span><span>&nbsp;</span>
+
+                    <span *ngFor="let letter of aboutNameArray2; let i = index" class="text-animate _X{{ i + 6 }}"
+                        appChangeClasses>{{letter}}</span>
+                </h2>
+                <span class="tags">&lt;/h2&gt;</span>
+
+                <div class="welcome-container">
+                    <div>
+                        <span class="tags">&lt;p&gt;</span>
+                        <p>
+                            "Welcome to my website and enjoy watching it.
+                            I'm a Front-end developer based in Munich.
+                            You will find a short summary of my life in the section below.
+                            If you have any questions, please do not hesitate to contact me!"
+                        </p>
+                        <span class="tags">&lt;/p&gt;</span><br>
+                        <span class="tags">&lt;span&gt;</span>
+                        <div id="subscribe">
+                            <p>Adriano Parente</p>
+                        </div>
+                        <span class="tags">&lt;/span&gt;</span>
+                    </div>
+                    <img class="aboutImage" src="assets/img/Adriano_wall.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="life-container">
+            <div *ngFor="let story of stories" class="life-category-container" snInViewport>
+                <div class="circle">
+                    <i class="{{ story.icon }}"></i>
+                </div>
+                <p class="description-headline"><b>{{ story.headline }}</b></p>
+                <div class="description-text">
+                    <p>
+                        {{ story.description }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="life-container">
-        <div *ngFor="let story of stories" class="life-category-container" snInViewport>
-            <div class="circle">
-                <i class="{{ story.icon }}"></i>
-            </div>
-            <p class="description-headline"><b>{{ story.headline }}</b></p>
-            <div class="description-text">
-                <p>
-                    {{ story.description }}
-                </p>
-            </div>
-        </div>       
-    </div>
-
 </div>

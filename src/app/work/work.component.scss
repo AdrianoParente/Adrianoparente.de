@@ -1,18 +1,23 @@
-.work-main-container {
+.intro-container {
   width: 100wh;
   background-color: var(--background-black);
+}
+
+.work-main-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: white;
-  padding-left: 150px;
-  padding-right: 150px;
+  margin: 0 150px;
+}
 
-  h2 {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
 }
 
 .category-button-container {
@@ -78,72 +83,6 @@
   }
 }
 
-.container {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
-
-#el-pollo-loco {
-  img {
-    object-position: -150px 0;
-  }
-}
-
-#call-a-icecream {
-  img {
-    object-position: 0 0;
-  }
-}
-
-#simple_crm {
-  img {
-    object-position: 0 0;
-  }
-}
-
-.card {
-  border: 2px solid var(--primary);
-  width: 400px;
-  height: 325px;
-  position: relative;
-
-  &:hover {
-    border: 2px solid var(--secondary);
-  }
-
-  img {
-    width: 400px;
-    height: 325px;
-    object-fit: cover;
-  }
-}
-
-.card-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 400px;
-  height: 325px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-
-  h3 {
-    margin-top: 30px;
-  }
-
-  p {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-}
-
 .d-none {
   display: none;
 }
@@ -164,20 +103,17 @@
   opacity: 0;
 }
 
-
-h2.sn-viewport--in {
-  animation: fadeInAnimationLeft 500ms ease-in;
-}
-
-h2.sn-viewport--out {
-  opacity: 0;
+.button-work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .all-works {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -186,8 +122,40 @@ h2.sn-viewport--out {
 .wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.tags-right {
+  margin-left: 50px;
+}
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+@for $i from 0 through 10 {
+  ._X#{$i} {
+    animation-delay: #{$i / 7.5}s;
+  }
+}
+
+.text-animation-hover {
+  display: inline-block;
+  animation-fill-mode: both;
+  min-width: 10px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.text-animation-transition {
+  animation: rubberBand 1s;
 }
 
 @keyframes fadeInAnimationLeft {
@@ -202,7 +170,19 @@ h2.sn-viewport--out {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1100px) {
+  .work-main-container {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .work-main-container {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 620px) {
   .category-button-container {
     flex-direction: column;
     height: unset;
@@ -212,68 +192,44 @@ h2.sn-viewport--out {
   .category-button {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
+    a {
+      width: 100%;
+    }
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .tags {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 48px;
   }
 }
 
 @media (max-width: 450px) {
-  .card {
-    width: 250px;
-    height: 200px;
-
-    img {
-      width: 250px;
-      height: 200px;
-    }
-  }
-
-  .card-overlay {
-    width: 250px;
-    height: 200px;
-
-    h3 {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    p {
-      font-size: 12px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    .category-button {
-      a {
-        height: 30px;
-        line-height: 30px;
-      }
-    }
-  }
-
-  .work-main-container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  #el-pollo-loco {
-    img {
-      object-position: -100px 0;
-    }
-  }
-
-  #ring-of-fire {
-    img {
-      object-position: -10px 0;
-    }
+  h2 {
+    font-size: 36px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 400px) {
   .work-main-container {
-    padding-left: 0px;
-    padding-right: 0px;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width:1400px) {
+  .intro-container {
+    display: flex;
+    justify-content: center;
   }
 
-  .all-works {
+  .work-main-container {
     width: 1066px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

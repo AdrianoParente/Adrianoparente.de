@@ -1,9 +1,6 @@
 .contact-main-container {
   width: 100wh;
   background-color: var(--background-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-container {
@@ -11,19 +8,24 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  h1 {
-    margin-top: 40px;
+  margin: 0 150px;
+
+  h2 {
+    margin-left: 10px;
     color: var(--secondary);
   }
+
+  p {
+    margin-left: 10px;
+  }
+
   a {
     text-decoration: none;
   }
-  h1 {
-    margin-bottom: 20px;
-  }
+
   form {
     width: 100%;
-    margin-top: 40px;
+    margin: 0 10px;
   }
 
   input {
@@ -62,6 +64,7 @@
 
 .send-button {
   transform: translate(-50%, -50%);
+
   a {
     display: block;
     width: 150px;
@@ -79,10 +82,12 @@
     position: relative;
     transition: all 0.35s;
   }
+
   a span {
     position: relative;
     z-index: 2;
   }
+
   a:after {
     position: absolute;
     content: "";
@@ -93,13 +98,43 @@
     background: var(--secondary);
     transition: all 0.35s;
   }
+
   a:hover {
     color: #fff;
     cursor: pointer;
   }
+
   a:hover:after {
     width: 100%;
   }
+}
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+@for $i from 0 through 7 {
+  ._X#{$i} {
+    animation-delay: #{$i / 7.5}s;
+  }
+}
+
+.text-animation-hover {
+  display: inline-block;
+  animation-fill-mode: both;
+  min-width: 10px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.text-animation-transition {
+  animation: rubberBand 1s;
 }
 
 input.ng-invalid.ng-touched,
@@ -107,15 +142,62 @@ textarea.ng-invalid.ng-touched {
   border: 1px solid var(--primary) !important;
 }
 
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+  border: 1px solid var(--secondary) !important;
+}
+
 @media (max-width: 1100px) {
   .contact-main-container {
     height: unset;
   }
+
+  .contact-container {
+    margin: 0 100px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .contact-container {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .tags {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-container {
+    margin: 0 10px;
+    
+    form {
+      width: 95%;
+    }
+  }
+}
+
+@media (min-width:1400px) {
   .contact-main-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    width: 1066px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

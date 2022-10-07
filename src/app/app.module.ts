@@ -18,6 +18,9 @@ import { AngularProjectsComponent } from './angular-projects/angular-projects.co
 import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
 import { FormsModule } from '@angular/forms';
+import { ChangeClassesDirective } from './change-classes.directive';
+import { InViewDirective } from './in-view.directive';
+
 
 @NgModule({
   declarations: [
@@ -34,14 +37,15 @@ import { FormsModule } from '@angular/forms';
     MainComponent,
     AngularProjectsComponent,
     JavascriptProjectsComponent,
-    AllProjectsComponent
+    AllProjectsComponent,
+    ChangeClassesDirective,
+    InViewDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InViewportModule,
-    FormsModule
-
+    FormsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
