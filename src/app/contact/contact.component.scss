@@ -3,15 +3,16 @@
   background-color: var(--background-black);
 }
 
-.mail{
+.mail {
   margin-left: 10px;
 }
+
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 50px 150px;
+  margin: 0 150px;
 
   h2 {
     margin-left: 10px;
@@ -53,6 +54,13 @@
   }
 }
 
+.mar-top {
+  margin-top: 50px;
+}
+
+#myForm {
+  margin-bottom: 50px;
+}
 .send-button-container {
   width: 100%;
   display: flex;

@@ -19,7 +19,7 @@
   align-items: flex-start;
   margin-top: 50px;
 
-  h2{
+  h2 {
     margin-left: 10px;
   }
 }
@@ -115,7 +115,7 @@
   margin-bottom: 50px;
 }
 
-.buttons{
+.buttons {
   margin-top: 50px;
   margin-left: 10px;
 }
@@ -167,18 +167,6 @@
   animation: rubberBand 1s;
 }
 
-@keyframes fadeInAnimationLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @media (max-width: 1100px) {
   .work-main-container {
     margin: 0 100px;
@@ -202,17 +190,22 @@
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+
     a {
       width: 100%;
     }
   }
-  
+
+  .buttons {
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
   .tags {
     font-size: 12px;
   }
+
   h2 {
     font-size: 48px;
   }
@@ -227,6 +220,14 @@
 @media (max-width: 400px) {
   .work-main-container {
     margin: 0 10px;
+  }
+
+  .buttons {
+    margin: 0;
+  }
+
+  .all-works {
+    margin-left: 0;
   }
 }
 

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-  workNameArray1:string[] = ['M','y'];
-  workNameArray2:string[] = ['P','o','r','t','f','o','l','i','o'];
+  workNameArray1: string[] = ['M', 'y'];
+  workNameArray2: string[] = ['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o'];
 
   constructor() { }
 
@@ -18,20 +18,20 @@ export class WorkComponent implements OnInit {
   javascript = false;
   angular = false;
 
-  showAll() {    
+  showAll() {
     this.all = true;
     this.javascript = false;
     this.angular = false;
   }
 
-  showJavascript() {   
+  showJavascript() {
     this.javascript = true;
     this.angular = false;
     this.all = false;
   }
 
-  showAngular() {    
-    this.javascript = false;    
+  showAngular() {
+    this.javascript = false;
     this.angular = true;
     this.all = false;
   }

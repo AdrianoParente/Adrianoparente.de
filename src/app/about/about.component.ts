@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  aboutNameArray1:string[] = ['A','b','o','u','t'];
-  aboutNameArray2:string[] = ['m','e'];
+  aboutNameArray1: string[] = ['A', 'b', 'o', 'u', 't'];
+  aboutNameArray2: string[] = ['m', 'e'];
   stories = [
     {
       'icon': 'fas fa-walking',
@@ -38,8 +38,6 @@ export class AboutComponent implements OnInit {
     }
   ]
   constructor() { }
-
-
 
   ngOnInit(): void {
   }

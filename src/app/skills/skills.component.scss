@@ -1,6 +1,8 @@
 .intro-container {
   height: 100vh;
   background-color: var(--background-grey);
+  display: flex;
+  justify-content: center;
 }
 
 .skills-main-container {
@@ -68,18 +70,6 @@
   animation: rubberBand 1s;
 }
 
-@keyframes fadeInAnimationLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @media (max-width: 1280px) {
 
   .intro-container {
@@ -93,6 +83,10 @@
 
   .tags-right {
     margin: 0;
+  }
+
+  .tag-container {
+    margin-bottom: 50px;
   }
 }
 
@@ -121,7 +115,7 @@
 @media (max-width: 550px) {
   .tags {
     font-size: 12px;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -148,17 +142,15 @@
 }
 
 
-  @media (min-width:1400px) {
-    .intro-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .skills-main-container {
-      width: 1066px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+@media (min-width:1400px) {
+  .intro-container {
+    display: flex;
+    justify-content: center;
   }
 
-
+  .skills-main-container {
+    width: 1066px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
