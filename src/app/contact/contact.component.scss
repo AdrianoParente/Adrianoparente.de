@@ -72,7 +72,7 @@
 .send-button {
   transform: translate(-50%, -50%);
 
-  a {
+  p {
     display: block;
     width: 150px;
     height: 60px;
@@ -90,12 +90,12 @@
     transition: all 0.35s;
   }
 
-  a span {
+  p span {
     position: relative;
     z-index: 2;
   }
 
-  a:after {
+  p:after {
     position: absolute;
     content: "";
     top: 0;
@@ -106,12 +106,12 @@
     transition: all 0.35s;
   }
 
-  a:hover {
+  p:hover {
     color: #fff;
     cursor: pointer;
   }
 
-  a:hover:after {
+  p:hover:after {
     width: 100%;
   }
 }

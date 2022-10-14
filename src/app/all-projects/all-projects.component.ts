@@ -16,7 +16,8 @@ export class AllProjectsComponent implements OnInit {
         'Let the little mexican guy Pepe collect coins and bottles, ' +
         'but take care of the chickens and throw the bottles ' +
         'to fight against the final boss "El pollo loco".',
-      'link': 'http://adriano-parente.de/el-pollo-loco/'
+      'link': 'http://adriano-parente.de/el-pollo-loco/',
+      'alt': 'el pollo loco'
     },
     {
       'id': 'call-a-icecream',
@@ -24,7 +25,8 @@ export class AllProjectsComponent implements OnInit {
       'id2': 'call-a-icecream-overlay',
       'name': 'Call A Icecream',
       'description': ' A Lieferando clone, built with javascript. Shows how a shop-basket works.',
-      'link': 'http://adriano-parente.de/call-a-icecream/'
+      'link': 'http://adriano-parente.de/call-a-icecream/',
+      'alt': 'call a icecream'
     },
     {
       'id': 'ring-of-fire',
@@ -34,7 +36,8 @@ export class AllProjectsComponent implements OnInit {
       'description': 'A famous card game where the players must drink.' +
         'Build with Angular framework and a firebase database.' +
         'A multiplayer mode is implemented.',
-      'link': 'http://adriano-parente.de/ring-of-fire'
+      'link': 'http://adriano-parente.de/ring-of-fire',
+      'alt': 'ring of fire'
     },
 
     {
@@ -43,7 +46,8 @@ export class AllProjectsComponent implements OnInit {
       'id2': 'simple_crm-overlay',
       'name': 'Simple CRM',
       'description': ' A simple CRM system, built with Angular and a firebase database.',
-      'link': 'http://adriano-parente.de/simple_crm/'
+      'link': 'http://adriano-parente.de/simple_crm/',
+      'alt': 'simple crm'
     },
 
     {
@@ -52,7 +56,8 @@ export class AllProjectsComponent implements OnInit {
       'id2': 'homepage-overlay',
       'name': 'Homepage',
       'description': 'My personal homepage' ,
-      'link': 'http://adriano-parente.de'
+      'link': 'http://adriano-parente.de',
+      'alt': 'homepage'
     },
 
     {
@@ -61,7 +66,8 @@ export class AllProjectsComponent implements OnInit {
       'id2': 'recipe-overlay',
       'name': 'Recipe',
       'description': 'A Kochwelt clone' ,
-      'link': 'http://adriano-parente.de'
+      'link': 'http://adriano-parente.de',
+      'alt': 'recipe'
     }
   ]
   constructor() { }

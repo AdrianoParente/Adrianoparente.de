@@ -1,6 +1,6 @@
 <div *ngFor="let work of works" id="{{ work.id }}" class="container" snInViewport>
     <div class="card" (mouseover)="showOverlay(work.id)" (mouseout)="hideOverlay(work.id)">
-        <img src="{{ work.image }}">
+        <img src="{{ work.image }}" alt="{{ work.alt }}">
         <div id="{{ work.id2 }}" class="card-overlay d-none">
             <h3>
                 {{ work.name }}

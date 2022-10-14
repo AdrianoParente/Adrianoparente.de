@@ -17,7 +17,8 @@ export class AngularProjectsComponent implements OnInit {
       'description': 'A famous card game where the players must drink.' +
         'Build with Angular framework and a firebase database.' +
         'A multiplayer mode is implemented.',
-      'link': 'http://adriano-parente.de/ring-of-fire'
+      'link': 'http://adriano-parente.de/ring-of-fire',
+      'alt': 'ring of fire'
     },
 
     {
@@ -26,7 +27,8 @@ export class AngularProjectsComponent implements OnInit {
       'id2': 'simple_crm-overlay',
       'name': 'Simple CRM',
       'description': ' A simple CRM system, built with Angular and a firebase database.',
-      'link': 'http://adriano-parente.de/simple_crm/'
+      'link': 'http://adriano-parente.de/simple_crm/',
+      'alt': 'simple crm'
     },
 
     {
@@ -35,7 +37,8 @@ export class AngularProjectsComponent implements OnInit {
       'id2': 'homepage-overlay',
       'name': 'Homepage',
       'description': 'My personal homepage' ,
-      'link': 'http://adriano-parente.de'
+      'link': 'http://adriano-parente.de',
+      'alt': 'homepage'
     }
 
   ]

@@ -54,7 +54,7 @@
         font-weight: bold;
         text-align: center;
         line-height: 50px;
-        color: var(--primary);
+        color: black;
         width: 100%;
         height: 50px;
         border-radius: 80px;
@@ -63,7 +63,7 @@
         &:hover {
             box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
             transform: scale(0.9);
-            color: black;
+            color: var(--primary);
         }
     }
 }
