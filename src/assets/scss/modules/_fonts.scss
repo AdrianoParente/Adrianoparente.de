@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'La Belle Aurore';
+    font-style: normal;
+    font-weight: 400;
+   src: url('/assets//fonts/la-belle-aurore-v16-latin-regular.eot');
+    src: local('La Belle Aurore'),
+         url('/assets/fonts/la-belle-aurore-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/la-belle-aurore-v16-latin-regular.woff2') format('woff2'), 
+         url('/assets/fonts/la-belle-aurore-v16-latin-regular.woff') format('woff'), 
+         url('/assets/fonts/la-belle-aurore-v16-latin-regular.ttf') format('truetype'), 
+         url('/assets/fonts/la-belle-aurore-v16-latin-regular.svg#LaBelleAurore') format('svg'); 
+  }
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/inter-v12-latin-regular.eot'); 
+    src: local('Inter'),
+         url('/assets/fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('/assets/fonts/inter-v12-latin-regular.woff2') format('woff2'),
+         url('/assets/fonts/inter-v12-latin-regular.woff') format('woff'), 
+         url('/assets/fonts/inter-v12-latin-regular.ttf') format('truetype'), 
+         url('/assets/fonts/inter-v12-latin-regular.svg#Inter') format('svg'); 
+  } 
+
+  @font-face {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/montserrat-alternates-v17-latin-regular.eot'); 
+    src: local('Montserrat Alternates'),
+         url('/assets/fonts/montserrat-alternates-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/montserrat-alternates-v17-latin-regular.woff2') format('woff2'), 
+         url('/assets/fonts/montserrat-alternates-v17-latin-regular.woff') format('woff'), 
+         url('/assets/fonts/montserrat-alternates-v17-latin-regular.ttf') format('truetype'), 
+         url('/assets/fonts/montserrat-alternates-v17-latin-regular.svg#MontserratAlternates') format('svg'); 
+  }
+  
+@font-face {
+    font-family: 'WindSong';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/windsong-v7-latin-regular.eot');
+    src: local('WindSong'),
+         url('/assets/fonts/windsong-v7-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('/assets/fonts/windsong-v7-latin-regular.woff2') format('woff2'),
+         url('/assets/fonts/windsong-v7-latin-regular.woff') format('woff'), 
+         url('/assets/fonts/windsong-v7-latin-regular.ttf') format('truetype'), 
+         url('/assets/fonts/windsong-v7-latin-regular.svg#WindSong') format('svg'); 
+  } 

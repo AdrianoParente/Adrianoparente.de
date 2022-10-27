@@ -35,7 +35,8 @@
         <div class="life-container">
             <div *ngFor="let story of stories" class="life-category-container" snInViewport>
                 <div class="circle">
-                    <i class="{{ story.icon }}"></i>
+                  <!--  <i class="{{ story.icon }}"></i>-->
+                  <svg [attr.viewBox]="story.view"> <path [attr.d]="story.icon"/></svg> 
                 </div>
                 <p class="description-headline"><b>{{ story.headline }}</b></p>
                 <div class="description-text">

@@ -1,4 +1,6 @@
 @import '~animate.css/animate.min';
+@import '../src/assets/scss/modules/_fonts.scss';
+
 html{
     scroll-behavior: smooth;
 }
@@ -25,14 +27,16 @@ body{
 h1{
     font-size: 64px;
     color: white;
-    margin: 0;
+    margin: 0; 
+    font-weight: bold;
 }
 
 h2{
     font-size: 64px;
     color: var(--secondary);
     margin: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;    
+   
 }
 
 h3{
