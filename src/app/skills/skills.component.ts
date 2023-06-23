@@ -5,13 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
+
 export class SkillsComponent implements OnInit {
   skillNameArray1:string[] = ['M','y'];
-  skillNameArray2:string[] = ['S','k','i','l','l','s'];
-  
+  skillNameArray2:string[] = ['S','k','i','l','l','s'];  
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
+  
 }

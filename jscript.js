@@ -1,4 +1,4 @@
-$(document).ready(function () {
+window.onload = $(document).ready(function () {  
   var entries = [
     {
       image: "../assets/img/restApi.png",
@@ -144,7 +144,7 @@ $(document).ready(function () {
     opacityOut: 0.05,
     opacitySpeed: 6,
     fov: 800,
-    speed: 2,
+    speed: 0.25,
     fontFamily: "Courier, Arial, sans-serif",
     fontSize: "25",
     fontColor: "var(--primary)",
@@ -177,7 +177,7 @@ $(document).ready(function () {
     opacityOut: 0.05,
     opacitySpeed: 6,
     fov: 800,
-    speed: 2,
+    speed: 0.25,
     fontFamily: "Courier, Arial, sans-serif",
     fontSize: "16",
     fontColor: "var(--primary)",
@@ -210,7 +210,7 @@ $(document).ready(function () {
     opacityOut: 0.05,
     opacitySpeed: 6,
     fov: 800,
-    speed: 2,
+    speed: 0.25,
     fontFamily: "Courier, Arial, sans-serif",
     fontSize: "16",
     fontColor: "var(--primary)",
