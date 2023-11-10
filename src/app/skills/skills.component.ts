@@ -11,10 +11,13 @@ export class SkillsComponent implements OnInit, AfterViewInit {
 
   constructor() {}
   ngAfterViewInit(): void {
-    setTimeout(() => {
+    setTimeout(() => {console.log('hello');
       const script = document.createElement('script');
       script.src = '../../script.js';
-      document.body.appendChild(script);
+      document.body.appendChild(script); console.log(script);
+      const scriptj = document.createElement('scriptj');
+      script.src = '../../jscript.js';
+      document.body.appendChild(scriptj);
     }, 500);
   }
 
